@@ -1,0 +1,40 @@
+<aside class="left-sidebar">
+  <div class="scroll-sidebar">
+     <nav class="sidebar-nav" id="sidebar">
+        <div class="sidebar-header">
+            <a routerLink="" ><img style="width: 150px; height: auto;" class="main-logo" src="/assets/img/logo.png" alt="" /></a>
+        </div>
+        <div class="left-custom-menu-adp-wrap comment-scrollbar">
+            <nav class="sidebar-nav left-sidebar-menu-pro">
+                
+        <ul class="metismenu" id="menu1">
+            <a routerLink="/admin" [attr.aria-expanded]="true ? menus[4]:true"><i class="fa fa-desktop m-r-5" aria-hidden="true"></i><span class="mini-click-non"> Dashboard</span></a>
+           <li [ngClass]="{'active': menus[2]}">
+              <a (click)="navmenuclick(2)" class="has-arrow" [attr.aria-expanded]="true ? menus[2]:true">
+                <span class="educate-icon educate-professor icon-wrap"></span><span class="mini-sub-pro">Instructors</span></a>
+              <ul *ngIf=menus[2] class="collapse in">
+                 <li><a routerLink="/admin/instructors/add" [ngClass]="{'active': submenu[2]}" ><i class="mini-click-non"></i>Add Instructors</a></li>
+                 <li><a routerLink="/admin/instructors/manage" [ngClass]="{'active': submenu[3]}" ><i class="mini-click-non"></i>Manage Instructors</a></li>
+              </ul>
+           </li>
+           <li [ngClass]="{'active': menus[3]}">
+              <a (click)="navmenuclick(3)" class="has-arrow" [attr.aria-expanded]="true ? menus[3]:true"><span class="educate-icon educate-student icon-wrap"></span><span class="mini-click-non">Students</span></a>
+              <ul *ngIf=menus[3] class="collapse in">
+                 <li><a routerLink="/admin/students/add" [ngClass]="{'active': submenu[4]}" ><i class="mini-click-non"></i>Add Students</a></li>
+                 <li><a routerLink="/admin/students/manage" [ngClass]="{'active': submenu[5]}" ><i class="mini-click-non"></i>Manage Students</a></li>
+              </ul>
+           </li>
+           <li [ngClass]="{'active': menus[4]}">
+              <a (click)="navmenuclick(4)" class="has-arrow" [attr.aria-expanded]="true ? menus[4]:true"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Courses</span></a>
+              <ul *ngIf=menus[4] class="collapse in" aria-expanded="false">
+                 <li><a routerLink="/admin/courses/add" [ngClass]="{'active': submenu[6]}" ><i class="mini-click-non"></i>Add Courses</a></li>
+                 <li><a routerLink="/admin/courses/manage" [ngClass]="{'active': submenu[7]}" ><i class="mini-click-non"></i>Manage Courses</a></li>
+              </ul>
+           </li>
+           <a routerLink="/admin/categories" [attr.aria-expanded]="true ? menus[4]:true"><i class="fa fa-files-o m-r-5" aria-hidden="true"></i><span class="mini-click-non"> Categories</span></a>
+        </ul>
+    </nav>
+</div>
+     </nav>
+  </div>
+</aside>

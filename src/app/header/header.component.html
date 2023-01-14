@@ -1,0 +1,154 @@
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="/assets/course/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/course/css/style.css" type="text/css" />
+
+	<link rel="stylesheet" href="/assets/course/css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/course/css/font-icons.css" type="text/css" />
+	<link href="/assets/course/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/course/css/magnific-popup.css" type="text/css" />
+
+	<link href="/assets/course/css/et-line.css" type="text/css" />
+
+	<link rel="stylesheet" href="/assets/course/css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="/assets/course/css/colors.php?color=0474c4" type="text/css" />
+
+	<!-- Hosting Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="/assets/course/css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/course/course.css" type="text/css" />
+	<link href="/assets/course/coworking/coworking.css" type="text/css" /> <!-- Theme CSS -->
+	<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+<!-- Document Title
+	============================================= -->
+	<title>Header</title>
+
+	<style>
+		@media (min-width: 992px) {
+
+			#top-bar.transparent-topbar {
+				z-index: 299;
+				border-bottom: 0;
+				padding-top: 15px;
+			}
+
+			#top-bar.transparent-topbar { background: transparent !important; }
+
+			#top-bar + #header.transparent-header.floating-header { margin-top: 25px; }
+
+			#top-bar.transparent-topbar + #header.transparent-header.floating-header + #slider,
+			#top-bar.transparent-topbar + #header.transparent-header.floating-header + .page-title-parallax {
+				margin-bottom: calc( -175px );
+				top: calc( -175px );
+			}
+
+		}
+
+		.dark .top-links li > a,
+		.dark #top-social li a { color: #FFF; }
+
+		.dark .top-links li:hover { background-color: rgba(255,255,255,0.15); }
+
+		.dark #top-social li { border-left: 0; }
+	</style>
+
+</head>
+
+<!-- Header
+		============================================= -->
+		<header id="header" class="sticky-style-2">
+
+			<div class="container clearfix">
+
+				<nav class="navbar navbar-expand-lg p-0 m-0">
+					<div id="logo">
+						<a href="index.html" class="standard-logo"><img src="/assets/img/logo.png" alt="Canvas Logo"></a>
+						<a href="index.html" class="retina-logo"><img src="/assets/course/images/logo@2x.png" alt="Canvas Logo"></a>
+					</div>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-line-menu"></span>
+					</button>
+					<div class="collapse navbar-collapse align-items-end" id="navbarNav">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">Home</a>
+							</li> 
+							 <li class="nav-item">
+								<a href="/Courses" class="nav-link">Courses
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Instructors</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Events</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a role="button" (click)="login()" class="nav-link" >Log in</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+			</div>
+
+			<div id="header-wrap" class="bg-light">
+
+				<!-- Primary Navigation
+				============================================= -->
+				<nav id="primary-menu" class="with-arrows style-2">
+
+					<div class="container clearfix">
+
+						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+						
+						
+						
+
+					
+
+						<!-- Top Search
+						============================================= -->
+					
+						
+							<div *ngIf="loggedin()==true ;else loggedOut">
+								<div class="header-buttons">
+							
+								  <a href="#" class="button button-rounded button-small ml-2">Profile</a>
+								  <button (click)="logOut()" class="button button-rounded button-border button-small">Log out</button>
+								</div>
+							</div>
+							  
+							  <ng-template #loggedOut>
+								<div class="header-buttons">
+									<a href="/login" (click)="login()" class="button button-rounded button-border button-small">Log In</a>
+									<a href="/register" class="button button-rounded button-small ml-2">Sign Up</a>
+								</div>
+							  </ng-template>
+
+							
+					
+					</div>
+					
+				</nav><!-- #primary-menu end -->
+
+			</div>
+
+		</header><!-- #header end -->
+
+
+
+	

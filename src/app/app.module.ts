@@ -43,7 +43,7 @@ import { OAuthService } from 'angular-oauth2-oidc';
   declarations: [
     AppComponent,
     HomepageComponent,
-    AdminComponent,
+    AdminComponent, 
     RegisterComponent,
     LoginComponent,
     HeaderComponent,

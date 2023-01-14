@@ -32,12 +32,12 @@ import { RouterModule } from '@angular/router';
 import { AddStudentComponent } from './admin/add-student/add-student.component';
 import { AddInstructorComponent } from './admin/add-instructor/add-instructor.component';
 import { AddCourseComponent } from './admin/add-course/add-course.component';
-import { AuthService } from './services/auth.service';
 import { AllCoursesComponent } from './all-courses/all-courses.component';
 import { UserService } from './services/user.service';
 import { SingleCourseComponent } from './single-course/single-course.component';
 import { OAuthService } from 'angular-oauth2-oidc';
 import { HeaderComponent } from './header/header.component';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -78,8 +78,9 @@ import { HeaderComponent } from './header/header.component';
     HttpClientModule,
     FormsModule,
     RouterModule,
+
   ],
-  providers: [OAuthService,UserService],
+  providers: [OAuthService,UserService,AuthService],
   bootstrap: [AppComponent],
   exports: [
     HeaderAdminComponent,

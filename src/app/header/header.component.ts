@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { JwksValidationHandler, OAuthService } from 'angular-oauth2-oidc';
-import { AuthService } from '../services/auth.service';
 import { authCodeFlowConfig } from '../sso-config';
 import { User } from '../user';
 
@@ -17,6 +16,7 @@ export class HeaderComponent implements OnInit {
   constructor(private oauthService : OAuthService) { }
 
   ngOnInit(): void {
+    this.configureSingleSignOn();
   }
    
   configureSingleSignOn()

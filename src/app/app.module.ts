@@ -7,7 +7,6 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AdminComponent } from './admin/admin.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CoursesComponent } from './courses/courses.component';
 import { EditCourseComponent } from './courses/edit-course/edit-course.component';
@@ -38,6 +37,7 @@ import { AllCoursesComponent } from './all-courses/all-courses.component';
 import { UserService } from './services/user.service';
 import { SingleCourseComponent } from './single-course/single-course.component';
 import { OAuthService } from 'angular-oauth2-oidc';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [

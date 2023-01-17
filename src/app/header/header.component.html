@@ -86,6 +86,7 @@
 								<a href="/Courses" class="nav-link">Courses
 								</a>
 							</li>
+							
 							<li class="nav-item">
 								<a href="#" class="nav-link">Instructors</a>
 							</li>
@@ -95,9 +96,23 @@
 							<li class="nav-item">
 								<a href="#" class="nav-link">About Us</a>
 							</li>
+							<nav id="primary-menu" class="with-arrows style-2">
+							<div *ngIf="GetRole()">
 							<li class="nav-item">
-								<a role="button" (click)="login()" class="nav-link" >Log in</a>
+								<a  href="#" role="button" (click)="login()" class="nav-link">Sign On as admin</a>
 							</li>
+							
+						</div>
+						<div >
+							<li class="nav-item">
+								<a  href="#" role="button" (click)="login()" class="nav-link">Sign On as student</a>
+							</li>
+						</div>
+						<div *ngIf="GetRole()">
+							<li class="nav-item">
+								<a  href="#" role="button" (click)="login()" class="nav-link">Sign On as teacher</a>
+							</li>
+						</div> </nav>
 						</ul>
 					</div>
 				</nav>
@@ -151,4 +166,3 @@
 
 
 
-	

@@ -24,6 +24,9 @@
     "@ngrx/store": "^13.2.0",
     "@ngrx/store-devtools": "^13.2.0",
     "angular-oauth2-oidc": "^13.0.1",
+    "angular-oauth2-oidc-jwks": "^15.0.1",
+    "keycloak-angular": "^10.0.2",
+    "keycloak-js": "^20.0.3",
     "rxjs": "~7.5.0",
     "zone.js": "~0.11.4"
   },

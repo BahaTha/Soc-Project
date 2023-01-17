@@ -17,32 +17,32 @@ import { CategoriesComponent } from './admin/categories/categories.component';
 import { SingleCourseComponent } from './single-course/single-course.component';
 
 const routes: Routes = [  
-  { path : '/home' ,component: HomepageComponent},
-  {path : '/courses', component: CoursesComponent},
-  {path : '/instructors', component: InstructorsComponent},
-  {path : '/admin', component: AdminComponent},
-  {path : '/admin/instructors/add', component: AddInstructorComponent},
-  {path : '/admin/instructors/manage', component: ManageInstructorsComponent},
-  {path : '/admin/students/add', component: AddStudentComponent},
-  {path : '/admin/students/manage', component: ManageStudentsComponent},
-  {path : '/admin/courses/add', component: AddCourseComponent},
-  {path : '/admin/courses/manage', component: ManageCourseComponent},
-  {path : '/admin/categories', component: CategoriesComponent},
+  { path : 'home' ,component: HomepageComponent},
+  {path : 'courses', component: CoursesComponent},
+  {path : 'instructors', component: InstructorsComponent},
+  {path : 'admin', component: AdminComponent},
+  {path : 'admin/instructors/add', component: AddInstructorComponent},
+  {path : 'admin/instructors/manage', component: ManageInstructorsComponent},
+  {path : 'admin/students/add', component: AddStudentComponent},
+  {path : 'admin/students/manage', component: ManageStudentsComponent},
+  {path : 'admin/courses/add', component: AddCourseComponent},
+  {path : 'admin/courses/manage', component: ManageCourseComponent},
+  {path : 'admin/categories', component: CategoriesComponent},
   {path : '', component: HomepageComponent},
-  {path : '/login', component: LoginComponent},
-  {path : '/register', component: RegisterComponent},
-  {path : '/Courses', component: AllCoursesComponent,children: [
+  {path : 'login', component: LoginComponent},
+  {path : 'register', component: RegisterComponent},
+  {path : 'Courses', component: AllCoursesComponent,children: [
 
     { path: ':id', component: AllCoursesComponent },
   
 
   ]},
-  {path : '/Course/:id', component: SingleCourseComponent},
+  {path : 'Course/:id', component: SingleCourseComponent},
 ];
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes , {enableTracing: true})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
